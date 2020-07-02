@@ -132,22 +132,29 @@
             <div class="card cardForm col-lg-6 col-md-6 col-sm-12 pl-0 pr-0 pt-0 mt-0">
     
                 <div id="cardDois">
-                    <div id="form" class="form-group" method="POST"
-                        action="https://smtl.gama.academy/leads/bfeee313-b7e1-11ea-8228-89cff86db9a0">
                         <h5 class="text-center pt-5 pb-0">SEJA LÍDER COM PRODUTIVIDADE </br>E GERENCIAMENTO</h5>
                         <h6 class="text-center pt-0 pb-0 pl-4 pr-4">Novos tempos exigem uma nova
                             estratégia profissional</h6>
-                        <form class="form pt-2 pb-0 mb-0">
-                            <input id="nameForm" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
-                                title="Digite seu nome completo" required placeholder="Insira seu nome" />
-                            <input id="emailForm" name="email" type="email" title="Digite um email válido" required
-                                placeholder="Digite um e-mail válido" />
-                                
-                            <!-- retirar o debug antes do deploy final -->
-                            <!-- <input name="debugMode" type="hidden" value="false" /> -->
-                            <input name="redirectTo" type="hidden" value="https://prismaconsultoria-tks.netlify.app/">
-                            <button class="btn btn-block" id="btn-form" type="submit">
-                                 Enviar</button>
+                        <form class="form pt-2 pb-0 mb-0" method="POST" action="https://smtl.gama.academy/leads/bfeee313-b7e1-11ea-8228-89cff86db9a0">
+                            <input
+                               id="nameForm"
+                               name="name"
+                               type="text"
+                               pattern="^\D{2,}\s[\D\s]{2,}$"
+                               placeholder="Digite seu nome"
+                               title="Digite seu nome completo" 
+                               required
+                            />
+                            <input
+                               id="emailForm"
+                               name="email"
+                               type="email"
+                               placeholder="Digite seu email"
+                               title="Digite um email válido" 
+                               required
+                            />
+                            <input name="redirectTo" type="hidden" value="https://prismaconsultoriaonline-tks.netlify.app">
+                            <button class="btn btn-block" id="btn-form" type="submit"> Enviar</button>
                         </form>
                     </div>
                 </div>
